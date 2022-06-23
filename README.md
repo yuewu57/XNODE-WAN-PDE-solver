@@ -1,5 +1,6 @@
 # Towards fast weak adversarial training to solve high dimensional parabolic partial differential equations using XNODE-WAN
 
+This repository is the official implementation of the paper 
 * P.V. Oliva, Y Wu, C. He and H. Ni, [Towards fast weak adversarial training to solve high dimensional parabolic partial differential equations using XNODE-WAN](https://doi.org/10.1016/j.jcp.2022.111233), *Journal of Computational Physics*, 463 (2022), 111233.
 
 Due to the curse of dimensionality, solving high dimensional parabolic partial differential equations (PDEs) has been a challenging problem for decades. Recently, a weak adversarial network (WAN) proposed in [1] offers a flexible and computationally efficient approach to tackle this problem defined on arbitrary domains by leveraging the weak solution. WAN reformulates the PDE problem as a generative adversarial network, where the weak solution (primal network) and the test function (adversarial network) are parameterized by multi-layer deep neural networks (DNNs). 
@@ -11,10 +12,6 @@ More specifically, our XNODE-WAN algorithm aims to solve the following BVP PDE o
 ![equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Cbegin%7Bcases%7D%20%5Cpartial_t%20u%28t%2C%5Cmathbf%7Bx%7D%29-%5Coverset%7Bd%7D%7B%5Cunderset%7Bi%3D1%7D%7B%5Csum%7D%7D%5Cpartial_i%5CBig%28%5Coverset%7Bd%7D%7B%5Cunderset%7Bi%3D1%7D%7B%5Csum%7D%7Da_%7Bij%7D%28t%2C%5Cmathbf%7Bx%7D%29%20%5Cpartial_ju%28t%2C%5Cmathbf%7Bx%7D%29%5CBig%29&plus;%5Coverset%7Bd%7D%7B%5Cunderset%7Bi%3D1%7D%7B%5Csum%7D%7Db_i%28t%2C%5Cmathbf%7Bx%7D%29%5Cpartial_iu%28t%2C%5Cmathbf%7Bx%7D%5C%29&plus;c%28u%2C%20t%2C%5Cmathbf%7Bx%7D%29-f%28t%2C%5Cmathbf%7Bx%7D%29%3D0%20%26%5Ctext%7B%20for%20%7D%20%28t%2C%20%5Cmathbf%7Bx%7D%29%20%5Cin%20%5Cmathcal%7BD%7D%2C%5C%5C%20u%28t%2C%20%5Cmathbf%7Bx%7D%29%3D%20g%28t%2C%5Cmathbf%7Bx%7D%29%20%26%20%5Ctext%7Bon%20%7D%5Cpartial%20%5Cmathcal%7BD%7D%2C%5C%5C%20u%280%2C%5Cmathbf%7Bx%7D%29-h%28%5Cmathbf%7Bx%7D%29%3D0%20%26%20%5Ctext%7Bon%20%7D%5COmega%280%29%2C%20%5Cend%7Bcases%7D%20%5Cend%7Balign*%7D)
 
 where ![equation](https://latex.codecogs.com/gif.latex?%5COmega%28t%29%3A%3D%20%5C%7B%5Cmathbf%7Bx%7D%20%7C%20%28t%2C%20%5Cmathbf%7Bx%7D%29%20%5Cin%20%5Cmathcal%7BD%7D%5C%7D) denotes the spatial domain of <img src="https://latex.codecogs.com/gif.latex?\mathcal{D}" />  when restricting time to be <img src="https://latex.codecogs.com/gif.latex?t" /> .
-
-
-
-This repository is the official implementation of the paper entitled "Towards fast weak adversarial training to solve high dimensional parabolic partial differential equations using XNODE-WAN" ([arxiv](https://arxiv.org/abs/2110.07812)).
 
 # Running Codes
 Requirements for a successful implementation of the codes can be found in `requirements.txt`.
